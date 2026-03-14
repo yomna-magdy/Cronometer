@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.4 on win32)" generated="2026-03-14T08:10:44.614911" rpa="false" schemaversion="5">
+<suite id="s1" name="ADD 3Meals" source="E:\grammer\Embedded_system\Testing\Tests\ADD_3Meals.robot">
+<kw name="New Browser" owner="Browser" type="SETUP">
+<msg time="2026-03-14T08:10:44.883739" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "E:\\grammer\\Embedded_system\\Testing\\Tests\\browser\\traces\\temp\\c1b0936f-1fa5-4d3c-8065-db6b1a276012"}</msg>
+<msg time="2026-03-14T08:10:44.940597" level="INFO">Starting Browser process C:\Users\yomna\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:49703</msg>
+<msg time="2026-03-14T08:10:46.705376" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"E:\\grammer\\Embedded_system\\Testing\\Tests\\browser\\traces\\temp\\c1b0936f-1fa5-4d3c-8065-db6b1a276012"}</msg>
+<arg>${BROWSER}</arg>
+<arg>${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-14T08:10:44.883068" elapsed="1.830308"/>
+</kw>
+<test id="s1-t1" name="Add 3 Meals To Diary" line="12">
+<kw name="Login To Cronometer Web">
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-14T08:10:49.980779" level="INFO">Successfully initialized new page object and opened url: https://cronometer.com/login/</msg>
+<msg time="2026-03-14T08:10:49.988339" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${CRONOMETER_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-14T08:10:46.721370" elapsed="3.267676"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-14T08:10:59.989504" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-14T08:10:49.989046" elapsed="10.000892"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-14T08:11:00.114676" level="INFO">Waited for Element with selector id=username at state visible</msg>
+<arg>${username_ID}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-14T08:10:59.989938" elapsed="0.124738"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-14T08:11:00.114676" level="INFO">Fills the text 'yomnaaaa2@gmail.com' in the given field.</msg>
+<arg>${Username_Xpath}</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-14T08:11:00.114676" elapsed="0.056551"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-14T08:11:00.179171" level="INFO">Fills the text 'roIp$4XLqd4s@7Q' in the given field.</msg>
+<arg>${Password_Xpath}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-14T08:11:00.171227" elapsed="0.067389"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-14T08:11:00.238616" level="INFO">Clicks the element 'xpath=//button[@id='login-button']'.</msg>
+<arg>${Login_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-14T08:11:00.238616" elapsed="0.166464"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-14T08:11:10.405447" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-14T08:11:00.405080" elapsed="10.000367"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-14T08:11:14.783672" level="INFO">Waited for Element with selector xpath =//span[@class='material-icons'] at state visible</msg>
+<arg>${Cronometer_Bar}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-14T08:11:10.405447" elapsed="4.378225"/>
+</kw>
+<status status="PASS" start="2026-03-14T08:10:46.713376" elapsed="28.070296"/>
+</kw>
+<kw name="Open Cronometer bar">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-14T08:11:16.793701" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-14T08:11:14.792500" elapsed="2.001201"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-14T08:11:16.793701" level="INFO">Clicks the element 'xpath=//button[@class='btn btn-toggle collapsed text-white align-items-baseline']'.</msg>
+<arg>${Foods_Button's Xpath}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-14T08:11:16.793701" elapsed="1.344495"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-14T08:11:20.138341" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-14T08:11:18.138196" elapsed="2.000145"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-14T08:11:20.138341" level="INFO">Clicks the element 'xpath =//a[normalize-space()='Search Foods']'.</msg>
+<arg>${Search_Foods_Button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-14T08:11:20.138341" elapsed="0.273647"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-14T08:11:22.412465" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-14T08:11:20.411988" elapsed="2.000477"/>
+</kw>
+<status status="PASS" start="2026-03-14T08:11:14.792500" elapsed="7.619965"/>
+</kw>
+<kw name="Search For Food">
+<kw name="Click" owner="Browser">
+<msg time="2026-03-14T08:11:22.412465" level="INFO">Clicks the element 'xpath =//span[@class='d-inline-block']'.</msg>
+<arg>${Search Foods &amp; Recipes }</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-14T08:11:22.412465" elapsed="0.175660"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-14T08:11:24.590176" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-14T08:11:22.589619" elapsed="2.000557"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-14T08:11:24.590176" level="INFO">Fills the text 'Milk, Goat' in the given field.</msg>
+<arg>${Search Foods &amp; Recipes's bar}</arg>
+<arg>Milk, Goat</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-14T08:11:24.590176" elapsed="0.044180"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-14T08:11:24.637093" level="INFO">Clicks the element 'Text = "Milk, Goat"'.</msg>
+<msg time="2026-03-14T08:11:25.334108" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-14T08:11:25.334108" level="INFO">See also file:///E:/grammer/Embedded_system/Testing/Tests/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-14T08:11:25.334108" level="FAIL">Error: locator.click: Unknown engine "Text" while parsing selector Text= "Milk, Goat"
+Call log:
+  - waiting for locator('Text= "Milk, Goat"')
+</msg>
+<arg>Text = "Milk, Goat"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="FAIL" start="2026-03-14T08:11:24.635373" elapsed="0.706770">Error: locator.click: Unknown engine "Text" while parsing selector Text= "Milk, Goat"
+Call log:
+  - waiting for locator('Text= "Milk, Goat"')
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${Choose Meal}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-14T08:11:25.342143" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-03-14T08:11:22.412465" elapsed="2.929678">Error: locator.click: Unknown engine "Text" while parsing selector Text= "Milk, Goat"
+Call log:
+  - waiting for locator('Text= "Milk, Goat"')
+</status>
+</kw>
+<kw name="Add Food To Diary">
+<status status="NOT RUN" start="2026-03-14T08:11:25.342143" elapsed="0.000000"/>
+</kw>
+<kw name="Back To Foods">
+<status status="NOT RUN" start="2026-03-14T08:11:25.346561" elapsed="0.000000"/>
+</kw>
+<msg time="2026-03-14T08:11:25.358731" level="INFO">Switching context to context=15fd9735-9a54-473c-913e-7f056eb33db8 in CURRENT</msg>
+<msg time="2026-03-14T08:11:25.366612" level="INFO">Successfully changed active context: context=15fd9735-9a54-473c-913e-7f056eb33db8</msg>
+<msg time="2026-03-14T08:11:25.480056" level="INFO">Successfully closed Context</msg>
+<doc>This test case will add 3 meals to the diary and check if they are added successfully.</doc>
+<status status="FAIL" start="2026-03-14T08:10:46.713376" elapsed="38.633185">Error: locator.click: Unknown engine "Text" while parsing selector Text= "Milk, Goat"
+Call log:
+  - waiting for locator('Text= "Milk, Goat"')
+</status>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2026-03-14T08:11:25.736744" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-14T08:11:25.488791" elapsed="0.247953"/>
+</kw>
+<status status="FAIL" start="2026-03-14T08:10:44.614911" elapsed="41.121833"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="ADD 3Meals" id="s1" pass="0" fail="1" skip="0">ADD 3Meals</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
