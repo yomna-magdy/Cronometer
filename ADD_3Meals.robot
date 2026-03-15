@@ -24,14 +24,14 @@ Login To Cronometer Web
     sleep  10s
     Wait For Elements State    ${username_ID}      visible    
     Fill Text                  ${Username_Xpath}        ${username}
-    Fill Text                  ${Password_Xpath}       ${password}
+    Fill Secret                  ${Password_Xpath}       $password
     Click                      ${Login_Button}
     sleep    10s
     Wait For Elements State    ${Cronometer_Bar}    visible
 
 
 Open Cronometer bar
-   # Click                      ${Cronometer_Bar}
+    # Click                      ${Cronometer_Bar}
     sleep    2s
     Click                      ${Foods_Button's Xpath}  
     Sleep    2s
