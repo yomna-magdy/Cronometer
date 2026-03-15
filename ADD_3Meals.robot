@@ -21,12 +21,12 @@ Add 3 Meals To Diary
 *** Keywords ***
 Login To Cronometer Web
     New Page    ${CRONOMETER_URL}
-    sleep  10s
+    sleep  5s
     Wait For Elements State    ${username_ID}      visible    
     Fill Text                  ${Username_Xpath}        ${username}
     Fill Secret                  ${Password_Xpath}       $password
     Click                      ${Login_Button}
-    sleep    10s
+    sleep    5s
     Wait For Elements State    ${Cronometer_Bar}    visible
 
 
@@ -51,7 +51,7 @@ Search For Food
 Add Food To Diary
     Click                      ${Add to Diary Button}
     Sleep    2s
-    Select From List By Value  ${Diary group}        ${Category}=>Breakfast
+    Select Options By          ${Diary group}        label        Breakfast
     Click                      ${Add to Diary's second Button}
     Sleep    2s
 
