@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Browser
-Variables  Resourses/VariablesFor3Meals.yaml
+Variables  Resources/VariablesFor3Meals.yaml
 
 
 
