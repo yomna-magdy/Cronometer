@@ -42,8 +42,9 @@ Open Cronometer bar
 Search For Food
     Click                      ${Search Foods & Recipes }
     sleep    2s
-    Fill Text                  ${Search Foods & Recipes's bar}        Milk, Goat
-    Click                       "Milk, Goat"
+    Fill Text                  ${Search Foods & Recipes's bar}        ${food to search}
+    Click                      ${Search Button}
+    Click                      ${food to search's xpath}
     Click                      ${Choose Meal}
 
 
