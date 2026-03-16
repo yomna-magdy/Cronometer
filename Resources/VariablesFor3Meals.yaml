@@ -25,7 +25,7 @@ Choose Meal: text=CHOOSE
 
 #Add to Diary Variables
 Add to Diary Button: xpath =//button[normalize-space()='Add to Diary'] 
-Diary group: xpath =//button[@id='gwt-uid-960']
+Diary group: xpath =//button[contains(@aria-labelledby, 'food-summary-diaryGroupLabel')]
 Add to Diary's second Button: xpath =//button[@class='gwt-Button btn-flat-jungle-green']
 
 
