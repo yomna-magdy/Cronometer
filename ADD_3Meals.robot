@@ -51,7 +51,8 @@ Search For Food
 Add Food To Diary
     Click                      ${Add to Diary Button}
     Sleep    2s
-    Select Options By          ${Diary group}        label        Breakfast
+    Click                      ${Diary group}
+    Click                      text =Breakfast Cereals
     Click                      ${Add to Diary's second Button}
     Sleep    2s
 
