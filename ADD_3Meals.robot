@@ -52,7 +52,7 @@ Add Food To Diary
     Click                      ${Add to Diary Button}
     Sleep    2s
     Click                      ${Diary group}
-    Click                      text =Breakfast Cereals
+    Get Element By Role    link    name=/Breakfast/i   
     Click                      ${Add to Diary's second Button}
     Sleep    2s
 
