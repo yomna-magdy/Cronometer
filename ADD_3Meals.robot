@@ -6,6 +6,9 @@ Variables  Resources/VariablesFor3Meals.yaml
 Suite Setup       New Browser    ${BROWSER}      ${HEADLESS} 
 Suite Teardown    Close Browser
 
+
+#should have an idea for addeing all the meals without typing the same keywords again and again for each meal.
+#could i use list and loops? but what about the categories of meals? they are different for each meal.
 *** Test Cases ***
 Add 3 Meals To Diary
     [Documentation]    This test case will add 3 meals to the diary and check if they are added successfully.
@@ -14,6 +17,8 @@ Add 3 Meals To Diary
     Search For Food
     Add Food To Diary
     Back To Foods
+
+
 
 
 *** Keywords ***
@@ -60,3 +65,5 @@ Add Food To Diary
 Back To Foods
     Click                      ${Back to foods's button}
     Sleep    5s
+
+
