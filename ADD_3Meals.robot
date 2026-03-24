@@ -3,8 +3,6 @@ Library     Browser
 Variables  Resources/VariablesFor3Meals.yaml
 
 
-
-
 Suite Setup       New Browser    ${BROWSER}      ${HEADLESS} 
 Suite Teardown    Close Browser
 
@@ -29,7 +27,6 @@ Login To Cronometer Web
     sleep    5s
     Wait For Elements State    ${Cronometer_Bar}    visible
 
-
 Open Cronometer bar
     # Click                      ${Cronometer_Bar}
     sleep    2s
@@ -52,10 +49,14 @@ Add Food To Diary
     Click                      ${Add to Diary Button}
     Sleep    2s
     Click                      ${Diary group}
-    Get Element By Role    link    name=/Breakfast/i   
+
+    ${Breakfast}=    Get Element By Role    ${Category's Role}    name=${Breakfast's name}
+    
+    Click                      ${Breakfast} 
+
     Click                      ${Add to Diary's second Button}
     Sleep    2s
 
 Back To Foods
-    Click                      ${Back To Foods Button}
-    Sleep    2s
+    Click                      ${Back to foods's button}
+    Sleep    5s

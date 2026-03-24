@@ -18,7 +18,7 @@ Search_Foods_Button:     xpath =//a[normalize-space()='Search Foods']
 #Search Food's Variables
 Search Foods & Recipes : xpath =//span[@class='d-inline-block']
 Search Foods & Recipes's bar: xpath =//input[@placeholder='Search all foods & recipes...']
-food to search: text=Milk, Goat
+food to search: Milk, Goat
 food to search's xpath: xpath =//div[@class='gwt-HTML'][normalize-space()='Milk, Goat']
 Search Button: xpath =//button[normalize-space()='SEARCH']
 Choose Meal: text=CHOOSE
@@ -26,10 +26,17 @@ Choose Meal: text=CHOOSE
 #Add to Diary Variables
 Add to Diary Button: xpath =//button[normalize-space()='Add to Diary'] 
 Diary group: xpath =//button[contains(@aria-labelledby, 'food-summary-diaryGroupLabel')]
-Add to Diary's second Button: xpath =//button[@class='gwt-Button btn-flat-jungle-green'][4]
-
+Add to Diary's second Button: xpath =//button[@class='gwt-Button btn-flat-jungle-green'][normalize-space()='Add to Diary']
 
 #Check page
 Back to foods's button: xpath =//span[normalize-space()='BACK TO FOODS']
+
+
+#Categories Variables
+Category's Role: Link
+Breakfast's name: Breakfast
+Lunch's name: Lunch
+Dinner's name: Dinner
+Snacks's name: Snacks
 
  
