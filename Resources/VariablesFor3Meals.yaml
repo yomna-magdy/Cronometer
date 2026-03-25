@@ -6,8 +6,8 @@ CRONOMETER_URL:    https://cronometer.com/login/
 username_ID   :      id=username
 Username_Xpath :       xpath=//input[@id='username']
 Password_Xpath:        xpath=//input[@id='password']
-username:          
-password:          
+username:              yomnaaaa2@gmail.com
+password:              roIp$4XLqd4s@7Q
 Login_Button:         xpath=//button[@id='login-button']
 
 #Open Cronometer Bar Variables
@@ -18,8 +18,6 @@ Search_Foods_Button:     xpath =//a[normalize-space()='Search Foods']
 #Search Food's Variables
 Search Foods & Recipes : xpath =//span[@class='d-inline-block']
 Search Foods & Recipes's bar: xpath =//input[@placeholder='Search all foods & recipes...']
-food to search: Milk, Goat
-food to search's xpath: xpath =//div[@class='gwt-HTML'][normalize-space()='Milk, Goat']
 Search Button: xpath =//button[normalize-space()='SEARCH']
 Choose Meal: text=CHOOSE
 
@@ -34,9 +32,9 @@ Back to foods's button: xpath =//span[normalize-space()='BACK TO FOODS']
 
 #Categories Variables
 Category's Role: Link
-Breakfast's name: Breakfast
-Lunch's name: Lunch
-Dinner's name: Dinner
-Snacks's name: Snacks
+#Breakfast's name: Breakfast
+#Lunch's name: Lunch
+#Dinner's name: Dinner
+#Snacks's name: Snacks
 
  
