@@ -96,7 +96,5 @@ Back To Foods
     Click                      ${Back to foods's button}
     Sleep    5s
 
-Logout From Cronometer Web
-    Click                      ${Logout_Button}
 
 
