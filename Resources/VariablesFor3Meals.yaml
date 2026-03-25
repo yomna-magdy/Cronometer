@@ -6,8 +6,8 @@ CRONOMETER_URL:    https://cronometer.com/login/
 username_ID   :      id=username
 Username_Xpath :       xpath=//input[@id='username']
 Password_Xpath:        xpath=//input[@id='password']
-username:              yomnaaaa2@gmail.com
-password:              roIp$4XLqd4s@7Q
+username:             
+password:              
 Login_Button:         xpath=//button[@id='login-button']
 
 #Open Cronometer Bar Variables
