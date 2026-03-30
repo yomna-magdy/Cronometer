@@ -6,8 +6,8 @@ CRONOMETER_URL:    https://cronometer.com/login/
 username_ID   :      id=username
 Username_Xpath :       xpath=//input[@id='username']
 Password_Xpath:        xpath=//input[@id='password']
-username:             
-password:              
+username:              yomnaaaa2@gmail.com
+password:              roIp$4XLqd4s@7Q
 Login_Button:         xpath=//button[@id='login-button']
 
 #Open Cronometer Bar Variables
@@ -32,9 +32,5 @@ Back to foods's button: xpath =//span[normalize-space()='BACK TO FOODS']
 
 #Categories Variables
 Category's Role: Link
-#Breakfast's name: Breakfast
-#Lunch's name: Lunch
-#Dinner's name: Dinner
-#Snacks's name: Snacks
 
  
