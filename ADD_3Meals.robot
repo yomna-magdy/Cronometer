@@ -45,23 +45,26 @@ Add 3 Meals To Diary
     Search For Food      Apple, Fresh, With Skin    cell
     Add Food To Diary    Snacks
     
+    #check diary
+    Check Diary
 
-
+    #Log-out
+    Logout
 
 *** Keywords ***
 Login To Cronometer Web
     New Page    ${CRONOMETER_URL}
-    sleep  5s
+    Sleep  5s
     Wait For Elements State    ${username_ID}      visible    
     Fill Text                  ${Username_Xpath}        ${username}
     Fill Secret                  ${Password_Xpath}       $password
     Click                      ${Login_Button}
-    sleep    5s
+    Sleep    5s
     Wait For Elements State    ${Cronometer_Bar}    visible
 
 Open Cronometer bar
     # Click                      ${Cronometer_Bar}
-    sleep    2s
+    Sleep    2s
     Click                      ${Foods_Button's Xpath}  
     Sleep    2s
     Click                      ${Search_Foods_Button}
@@ -71,11 +74,13 @@ Open Cronometer bar
 Search For Food
     [Arguments]      ${food to search}       ${food's role}
     Click                      ${Search Foods & Recipes }
-    sleep    2s
+    Sleep    2s
     Fill Text                  ${Search Foods & Recipes's bar}        ${food to search}
+    Sleep    2s
     Click                      ${Search Button}
     ${food to search's xpath}=   Get Element By Role    ${food's role}  name=${food to search}      exact=True
     Click                      ${food to search's xpath}
+    Sleep    1s
     Click                      ${Choose Meal}
 
 
@@ -88,7 +93,7 @@ Add Food To Diary
     ${Category}=    Get Element By Role    ${Category's Role}    name=${Category's type}   
     
     Click                      ${Category} 
-
+    sleep   2s
     Click                      ${Add to Diary's second Button}
     Sleep    2s
 
@@ -96,7 +101,10 @@ Back To Foods
     Click                      ${Back to foods's button}
     Sleep    5s
 
-Logout From Cronometer Web
-    Click                      ${Logout_Button}
 
-
+Check Diary
+    click   ${Diary's css}
+    Sleep   2s  
+Logout 
+    Click    ${Account's ID}
+    Click    ${Log out's xpath}
