@@ -32,9 +32,12 @@ Back to foods's button: xpath =//span[normalize-space()='BACK TO FOODS']
 
 #Categories Variables
 Category's Role: Link
-#Breakfast's name: Breakfast
-#Lunch's name: Lunch
-#Dinner's name: Dinner
-#Snacks's name: Snacks
 
+#Diary Variables
+Diary's css:  css= a[href="#diary"]
+
+
+#Log out variables
+Account's ID: id =navbarDropdown
+Log out's xpath: xpath=//button[@class="btn-outline-dark-raisin" and .="LOG OUT"]
  
