@@ -18,6 +18,7 @@ Cronometer Web and App Time Sync Test
     Search For Food
     Add Food To Diary
     Get Time From Web
+    Logout
     Open Mobile Application
     Open Account
     Sleep    2s
@@ -55,7 +56,8 @@ Search For Food
     Click                      ${Search_barWeb}
     sleep    2s
     Fill Text                  ${Search input's css}        ${Meal}
-    Click                      ${Meal}
+    ${Get Meal}=               Get Element By Role    cell     name=${Meal}    exact=True
+    Click                      ${Get Meal}
 
     Sleep    2s
     Click                      ${Choose Meal}
@@ -74,6 +76,11 @@ Get Time From Web
     Log To Console    Current Time: ${WEB_time}
     #${WEB_epoch}=    Convert Date    ${WEB_time}    result_format=epoch
 
+Logout 
+    Click    ${Account's ID}
+    sleep    2s
+    Click    ${Log out's xpath}
+
 
 Open Mobile Application
     [Documentation]    Open Cronometer App
@@ -86,10 +93,11 @@ Open Account
     Click Element                    ${AlreadyHaveAnAccountApp}
     wait until element is visible    ${EmailxpathApp}
     Click Element                    ${EmailxpathApp}
-    sleep    2s
-    click element                    ${Yomna's EmailApp}
-    Click Element                    ${Password's xpathApp}
+    sleep    5s
+    input text                       ${EmailXpathApp}            ${Email}
+    Click Element                    ${Password's xpathApp} 
     Input Text                       ${Password's xpathApp}      ${password}
+    Pause Execution
     Click Element                    ${LoginButtonApp}
     
 
