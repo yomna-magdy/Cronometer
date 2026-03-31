@@ -38,7 +38,7 @@ Open Cronometer Web
     sleep  10s
     Wait For Elements State    ${username_IDWeb}      visible    
     Fill Text                  ${Username_XpathWeb}        ${usernameWeb}
-    Fill Secret                  ${Password_XpathWeb}       roIp$4XLqd4s@7Q
+    Fill Secret                  ${Password_XpathWeb}       $password
     Click                      ${Login_ButtonWeb}
     sleep    10s
     Wait For Elements State    ${Cronometer_BarWeb}    visible    
@@ -89,7 +89,7 @@ Open Account
     sleep    5s
     click element    ${Yomna's EmailApp}
     Click Element    ${PasswordXpathApp}
-    Input Text       ${PasswordXpathApp}   roIp$4XLqd4s@7Q
+    Input Text       ${PasswordXpathApp}      ${password}
     Click Element    ${LoginButtonApp}
     
 
