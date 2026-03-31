@@ -44,7 +44,10 @@ Choose Meal:               text = CHOOSE
 #Add to Diary variables
 Add_to_DiaryWeb:           xpath=//button[@class='gwt-Button btn-flat-jungle-green'][normalize-space()='Add to Diary']
 
-
+#Logout variables
+Account's ID: id =navbarDropdown
+Log out's xpath: xpath=//button[@class="btn-outline-dark-raisin" and .="LOG OUT"]
+ 
 
 
 # Mobile app variables
@@ -52,8 +55,9 @@ Add_to_DiaryWeb:           xpath=//button[@class='gwt-Button btn-flat-jungle-gre
 #Login variables
 AlreadyHaveAnAccountApp:  xpath=//*[contains(@content-desc, "Already have an account")]
 EmailXpathApp:            xpath=//android.view.View[@content-desc="Copyright © 2011-2026"]/android.view.View[1]/android.widget.EditText[1]
-Yomna's EmailApp:         xpath=//android.widget.TextView[@resource-id="android:id/text1"] 
-Password's xpathApp:      xpath=//android.view.View[@content-desc="Copyright © 2011-2026"]/android.view.View[2]/android.widget.EditText[2]
+#Yomna's EmailApp:         xpath=//android.widget.TextView[@resource-id="android:id/text1"] 
+Password's xpathApp:      xpath=//android.view.View[@content-desc="Copyright © 2011-2026"]/android.view.View[1]/android.widget.EditText[2]
+#passwordApp:              xpath=(//android.widget.RelativeLayout[@resource-id="android:id/content"])[1]
 LoginButtonApp:           xpath=//*[contains(@content-desc, "LOG IN")]
 Meal's xpath:                     xpath=//*[contains(@content-desc, "Banana, Fresh\n1 large - 8" to 8 7/8" long\n119.7 kcal\n119.7\nkcal")]
 Meal's ID:                accessibility_id= Banana, Fresh\n1 large - 8" to 8 7/8" long\n119.7 kcal\n119.7\nkcal
