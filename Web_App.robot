@@ -36,8 +36,8 @@ Cronometer Web and App Time Sync Test
 Open Cronometer Web
     New Page                   ${CRONOMETER_URL}
     sleep  2s
-    Wait For Elements State    ${username_IDWeb}      visible    
-    Fill Text                  ${Username_XpathWeb}        ${usernameWeb}
+    Wait For Elements State    ${username_Web}      visible    
+    Fill Text                  ${Username_XpathWeb}        ${Email}
     Fill Secret                ${Password_XpathWeb}       $password
     Click                      ${Login_ButtonWeb}
     sleep    10s
