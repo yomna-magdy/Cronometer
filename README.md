@@ -7,10 +7,15 @@ This repository contains end-to-end test scenarios written in **Python** using *
 Cronometer/
 
 ├── ADD_3Meals.robot # Web-only: add 3 meals + snack to diary
+
 ├── Web_App.robot # Cross-platform: web + mobile time sync test
+
 ├── Resources/
+
 │ ├── VariablesFor3Meals.yaml # Credentials & selectors for ADD_3Meals
+
 │ └── VariablesWeb_App.yaml # Credentials & selectors for Web_App
+
 └── README.md
 
 
