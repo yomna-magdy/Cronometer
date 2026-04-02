@@ -20,8 +20,8 @@ APP_TO_SEARCH:   cronometer
 username_Web     :        id=username
 Username_XpathWeb :       xpath=//input[@id='username']
 Password_XpathWeb:        xpath=//input[@id='password']
-Email:                    yomnaaaa2@gmail.com
-password:                 roIp$4XLqd4s@7Q
+Email:                    
+password:                 
 Login_ButtonWeb:          xpath=//button[@id='login-button']
 
 
