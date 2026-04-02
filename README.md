@@ -5,6 +5,7 @@ This repository contains end-to-end test scenarios written in **Python** using *
 
 ## Repository Structure
 Cronometer/
+
 ├── ADD_3Meals.robot # Web-only: add 3 meals + snack to diary
 ├── Web_App.robot # Cross-platform: web + mobile time sync test
 ├── Resources/
