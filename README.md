@@ -60,7 +60,7 @@ Cronometer/
 
 ---
 
-## 🛠️ Tools & Frameworks
+##  Tools & Frameworks
 
 | Tool | Purpose |
 |------|---------|
